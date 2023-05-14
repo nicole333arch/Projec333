@@ -1,0 +1,89 @@
+
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Login or Register To Whatsapp</title>
+<link rel="stylesheet" href="css/login-style.css">
+<link href="css/bootstrap.css" type="text/css" rel="stylesheet">
+<link rel="stylesheet" href="ionicons/css/ionicons.css">
+<link href="favicon.png" type="image/png" rel="icon">
+</head>
+<body>
+<nav class="navbar striped navbar-collapse navbar-dark shadow mb-1" role="navigation">
+<div class="navbar-header step size-32 ml-3 mr-3 text-white">
+<!-- <button type="button" class="navbar-toggle btn" data-toggle="collapse" data-target="#example-navbar-collapse"><i class="ion-android-menu step size-32"></i></button> -->
+<i class="ion-social-whatsapp"></i>
+</div>
+<form action="log-action.php" method="post">
+<div class="input-group mr-5">
+<h6 class="m-2">Login Here</h6>
+<input type="text" class="form-control border-radius-left" name="username" style="width: 2% !important;" placeholder="Name" required>
+<input type="password" class="form-control" name="password" style="width: 2% !important;" placeholder="Password" required>
+<div class="input-group-append mr-5">
+<button type="submit" name="login" class="btn btn-info border-radius-right border-info">Login</button>
+</div>
+</div>
+</form>
+</nav>
+<div class="container">
+<div class="row mt-5">
+<div class="main col-md-8 mx-auto rounded-lg p-5 mt-5 shadow-lg">
+<div class="float-left col-md-5 left text-center">
+<i class="ion-social-Whatsapp span size-48"></i><br>
+<span class="logo-text" role="default-button">Whatsapp</span>
+<hr class="my">
+<span><strong>Join Us</strong><br>To get access to one of the worlds largest social networking platforms <strong>Whatsapp</strong></span><hr class="y-3 col-md-5 mx-auto">
+<button type="button" class="btn bg-white" onclick="window.location.href = 'about.html'; ">About Us</button>
+</div>
+<div class="float-right col-md-5 text-center">
+<h2 class="m-3">Register here</h2>
+<form class="input-group" action="log-action.php" method="post">
+<a></a>
+<input type="text" class="form-control m-1 rounded" name="username" placeholder="Username" required>
+<input type="password" class="form-control m-1 rounded" name="password" placeholder="Password" required>
+<input type="email" class="form-control m-1 rounded" name="email" placeholder="Email" required>
+<input type="tel" class="form-control m-1 rounded" name="tel" placeholder="Tel" required>
+<input type="checkbox" class="form-check-input" required> You agree our terms and conditions
+<button type="submit" name="register" class="btn btn-success rounded m-1 mx-auto" title="Sign Up">Sign Up</button>
+</form>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>
+<style>
+
+/* Login-style.css */
+.main{
+background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent) !important;
+}
+.logo{width: 70px !important; height: 70px !important;}
+.logo-text{font-size: 30px; font-weight: bold;}
+.form-control{
+width: 100% !important;
+}
+body{
+background: linear-gradient(to right, #09ff00, #22d831);
+cursor: default;
+pointer-events: none;
+}
+button, input{
+pointer-events: all !important;
+}
+.border-radius-left{
+border-top-left-radius: 5px !important;
+border-bottom-left-radius: 5px !important;
+}
+.border-radius-right{
+border-top-right-radius: 5px !important;
+border-bottom-right-radius: 5px !important;
+border-top-left-radius: 0px !important;
+border-bottom-left-radius: 0px !important;
+}
+.striped{
+background-size: 30rem 30rem;
+background-image: linear-gradient(135deg, rgba(255, 255, 255, 0.15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, 0.15) 50%, rgba(255, 255, 255, 0.15) 75%, transparent 75%, transparent);
+}
+</style>
